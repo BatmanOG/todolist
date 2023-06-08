@@ -1,4 +1,6 @@
 //creating new list item 
+function newItem(){
+    
 let li = $('<li></li>');
 let imputValue = $('#imput').val();
 li.append(inputValue);
@@ -27,10 +29,13 @@ let crossOutButton = $('<crossOutButton></crossOutButton>');
 crossOutButton.append(document.createTextNode('X'));
 li.append(crossOutButton);
 
+// adding delete function
+
 crossOutButton.on("click", deleteListItem);
    function deleteListItem(){
  		li.addClass("delete")
  	}
 
-    
+
 $('#list').sortable();
+};
