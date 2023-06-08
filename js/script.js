@@ -13,4 +13,24 @@ if (imputValue === '' ){
     }
 
 
+// crossing an item out
+function crossOut(){
+    li.toggleClass("strike");
+}
+li.on("dblclick", function crossOut() {
+    li.toggleClass("strike");
+});
 
+// delete button
+
+let crossOutButton = $('<crossOutButton></crossOutButton>');
+crossOutButton.append(document.createTextNode('X'));
+li.append(crossOutButton);
+
+crossOutButton.on("click", deleteListItem);
+   function deleteListItem(){
+ 		li.addClass("delete")
+ 	}
+
+    
+$('#list').sortable();
