@@ -2,12 +2,12 @@
 function newItem(){
     
     let li = $('<li></li>');
-    let imputValue = $('#imput').val();
-    li.append(imputValue);
+    let inputValue = $('#input').val();
+    li.append(inputValue);
     
     //checking for imput from user
     
-    if (imputValue === '' ){
+    if (inputValue === '' ){
         alert("Not a valid item, please write something to continue.");
     }
         else{
@@ -38,4 +38,4 @@ function newItem(){
     
     
     $('#list').sortable();
-    };
+    }
