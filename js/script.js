@@ -3,7 +3,7 @@ function newItem(){
     
     let li = $('<li></li>');
     let imputValue = $('#imput').val();
-    li.append(inputValue);
+    li.append(imputValue);
     
     //checking for imput from user
     
